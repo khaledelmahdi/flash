@@ -26,12 +26,12 @@ class LaravelSessionStore implements SessionStore
      */
     public function flash($message, $level)
     {
-        $count = count($this->session->get('mwa_flash', []));
-        $values[] = [
+        $identifier = uniqid();
+        $values = [
             'message' => $message,
             'level' => $level
         ];
-        $this->session->flash('mwa_flash.' . $count, $values);
+        $this->session->flash('mwa_flash.' . $identifier, $values);
     }
 
 }
