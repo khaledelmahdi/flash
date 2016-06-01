@@ -1,0 +1,26 @@
+{
+  "name": "mwa/flash",
+  "description": "Flash notifications",
+  "authors": [
+    {
+      "name": "Khaled Elmahdi",
+      "email": "khaled@mywebapplication.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "~5.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "MWA\\Flash\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "minimum-stability": "stable"
+}
